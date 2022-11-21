@@ -44,23 +44,55 @@
    <section class="has-background-light">
       <!--Practica-->
 
-      <div class="colums is-flex is-flex-direction-column">
-         <div class="box column is-2  has-background-white">
-               <div class="is-flex is-justify-content-space-between">
-                  <h3>Filtros</h3>
+      <div class="colums is-flex is-flex-direction-column-reverse py-5">
+
+         <div class="box column is-3 py-5 px-5  has-background-white mb-9 mt-5 mb-4">
+               <div class="is-flex is-justify-content-space-between mb-5">
+                  <h3 class="is-size-3">Filtros</h3>
                   <a href="#">Ocultar filtros</a>
                </div>
-               <div>
-                  <h5>Tipo</h5>
-                  <select name="" id="tipos">
+               <h5 class="my-2">Tipo</h5>
+               <div class="select is-fullwidth">
+                  <select class="mb-3" id="tipos">
                      <option value="todos">Todos</option>
                      <option value="gastos">Gastos</option>
                      <option value="ganancias">Ganancias</option>
                   </select>
                </div>
+
+               <h5 class="my-2">Categorías</h5>
+               <div class="select is-fullwidth">
+                  <select class="mb-3 select is-fullwidth" id="tipos">
+                     <option value="todas">Todas</option>
+                     <option value="comida">Comida</option>
+                     <option value="servicios">Servicios</option>
+                     <option value="salidas">Salidas</option>
+                     <option value="educacion">Educación</option>
+                     <option value="transporte">Transporte</option>
+                     <option value="trabajo">Trabajo</option>
+                  </select>
+               </div>
+
+               <h5 class="my-2">Desde</h5>
+               <div class="is-fullwidth">
+                  <input class="input" type="date">
+               </div>
+
+               <h5 class="my-2">Ordenar por</h5>
+               <div class="select is-fullwidth">
+                  <select id="tipos">
+                     <option value="todas">Más reciente</option>
+                     <option value="comida">Menos reciente</option>
+                     <option value="servicios">Mayor monto</option>
+                     <option value="salidas">Menor monto</option>
+                     <option value="educacion">A/Z</option>
+                     <option value="transporte">Z/A</option>
+                  </select>
+               </div>
+
          </div>
 
-            <div class="column box is-2 has-background-white px-5 py-5">
+            <div class="column box is-3 has-background-white px-5 py-5 mb-0">
                <h2 class="subtitle is-size-3">Balance</h2>
                <div class="is-flex is-justify-content-space-between py-3 is-align-items-center">
                   <h3>Ganancias</h3>
