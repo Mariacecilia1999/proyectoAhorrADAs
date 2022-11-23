@@ -40,9 +40,9 @@
       </div>
    </header>
 
-   <!--Sección balance-->
+   <!--Sección balance
    <section class="has-background-light is-flex  is-justify-content-center">
-      <div class="columns is-multiline is-justify-content-center is-align-items-center is-flex-direction-row-reverse">
+       <div class="columns is-multiline is-justify-content-center is-align-items-center is-flex-direction-row-reverse">
          
             <div class="column is-5  box is-flex is-flex-direction-column px-5 py-6 ml-6">
                <div class="is-flex is-justify-content-space-between mb-6">
@@ -123,7 +123,56 @@
             </div>
          </div>
 
-         </div>      
-   </section>
+      </div>
+
+      </section>-->
+
+      <section class="columns my-6 is-justify-content-center is-align-items-center is-flex-direction-column">
+         <!--Nueva operación-->
+         <div class="column box is-6 is-flex is-flex-direction-column mb-6">
+            <h2 class="is-size-2 mb-5">Nueva operación</h2>
+            <h5 class="mb-2 mt-5">Descripción</h5>
+            <div>
+               <input type="text" class="input is-fullwidth">
+            </div>
+            <h5 class="mb-2 mt-5">Monto</h5>
+            <div>
+               <input type="number" class="input is-fullwidth" value="0">
+            </div>
+
+            <h5 class="mb-2 mt-5">Tipo</h5>
+            <div class="select is-fullwidth">
+               <select name="" id="">
+                  <option value="">Gasto</option>
+                  <option value="">Ganancia</option>
+               </select>
+            </div>
+
+            <h5 class="mb-2 mt-5">Categoría</h5>
+            <div class="select is-fullwidth">
+               <select name="" id="">
+                  <option value="">Comida</option>
+                  <option value="">Servicios</option>
+                  <option value="">Salidas</option>
+                  <option value="">Educación</option>
+                  <option value="">Transporte</option>
+                  <option value="">Trabajo</option>
+               </select>
+            </div>
+
+            <h5 class="mb-2 mt-5">Fecha</h5>
+            <input type="date" class="input is-fullwidth mb-3">
+            <div class="is-flex is-justify-content-flex-end py-5">
+               <div>
+                  <button class="button">Cancelar</button>
+               </div>
+               <div class="pl-5">
+                  <button class="button has-background-success has-text-white">Agregar</button>
+               </div>
+            </div>
+         </div>
+      
+      </section>
+
 </body>
 </html>
