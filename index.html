@@ -252,13 +252,13 @@
 
       <!--Sección de reportes con operaciones-->
       <section class="columns is-justify-content-center is-align-items-center mt-6">
-         <div class="box column is-6">
+         <div class="box column is-6 px-6 py-6">
             <h2 class="is-size-2">Reportes</h2>
 
             <div>
                <h3 class="pt-6 pb-5 is-size-4">Resumen</h3>
 
-               <div class="is-flex is-justify-content-space-between is-align-items-center">
+               <div class="is-flex is-justify-content-space-between is-align-items-center column">
                   <h5>Categoría con mayor ganancia</h5>
                   <div class="column is-flex is-justify-content-space-between is-5">
                      <span>Trabajo</span>
@@ -266,7 +266,7 @@
                   </div>
                </div>
 
-               <div class="is-flex is-justify-content-space-between is-align-items-center">
+               <div class="is-flex is-justify-content-space-between is-align-items-center column">
                   <h5>Categoría con mayor gasto</h5>
                   <div class="column is-flex is-justify-content-space-between is-5">
                      <span>Comida</span>
@@ -274,7 +274,7 @@
                   </div>
                </div>
 
-               <div class="is-flex is-justify-content-space-between is-align-items-center">
+               <div class="is-flex is-justify-content-space-between is-align-items-center column">
                   <h5>Categoría con mayor balance</h5>
                   <div class="column is-flex is-justify-content-space-between is-5">
                      <span>Trabajo</span>
@@ -282,7 +282,7 @@
                   </div>
                </div>
 
-               <div class="is-flex is-justify-content-space-between is-align-items-center">
+               <div class="is-flex is-justify-content-space-between is-align-items-center column">
                   <h5>Mes con mayor ganancia</h5>
                   <div class="column is-flex is-justify-content-space-between is-5">
                      <span>2022/11/23</span>
@@ -290,7 +290,7 @@
                   </div>
                </div>
 
-               <div class="is-flex is-justify-content-space-between is-align-items-center">
+               <div class="is-flex is-justify-content-space-between is-align-items-center column">
                   <h5>Mes con mayor gasto</h5>
                   <div class="column is-flex is-justify-content-space-between is-5">
                      <span>2022/11/23</span>
@@ -298,9 +298,43 @@
                   </div>
                </div>
             </div>
+   
+         <div class="is-flex-direction-column is-flex is-justify-content-space-between">
+            <h3 class="pt-6 pb-5 is-size-4">Total por categorías</h3>
 
-            
-         </div>
+            <div class="is-flex is-justify-content-space-between  is-fullwidth column">
+                  <h6>Categoria</h6>
+                  <h6>Ganancias</h6>
+                  <h6>Gastos</h6>
+                  <h6>Balance</h6>
+            </div>
+
+            <div class="is-flex is-justify-content-space-between is-fullwidth is-align-items-end  column">
+               <h6>Comida</h6>
+               <p>$0</p>
+               <p>-$50</p>
+               <p>$500</p>
+            </div>
+         </div>  
+
+         <div class="is-flex-direction-column is-flex is-justify-content-space-between">
+            <h3 class="pt-6 pb-5 is-size-4">Total por mes</h3>
+
+            <div class="is-flex is-justify-content-space-between column is-align-items-center is-fullwidth">
+                  <h6>Mes</h6>
+                  <h6>Ganancias</h6>
+                  <h6>Gastos</h6>
+                  <h6>Balance</h6>
+            </div>
+
+            <div class="is-flex is-justify-content-space-between is-fullwidth is-align-items-center column is-full">
+               <h6>11/2022</h6>
+               <p>$0</p>
+               <p>-$50</p>
+               <p>$500</p>
+            </div>
+         </div>  
+      </div>
       </section>
 </body>
 </html>
