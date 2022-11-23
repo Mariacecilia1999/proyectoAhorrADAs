@@ -40,12 +40,14 @@
       </div>
    </header>
 
-   <!--Sección balance
+   <!--Sección balance-->
    <section class="has-background-light is-flex  is-justify-content-center">
-       <div class="columns is-multiline is-justify-content-center is-align-items-center is-flex-direction-row-reverse">
+
+      <!--Sin resultados balance-->
+       <div class="columns  is-justify-content-center is-align-items-center is-flex-direction-row-reverse">
          
-            <div class="column is-5  box is-flex is-flex-direction-column px-5 py-6 ml-6">
-               <div class="is-flex is-justify-content-space-between mb-6">
+            <!-- <div class="column is-5  box is-flex is-flex-direction-column px-5 py-6 ml-6"> -->
+               <!-- <div class="is-flex is-justify-content-space-between mb-6">
                   <h3 class="is-size-3">Operaciones</h3>
                   <button class="button has-background-primary has-text-white">+ Nueva operación</button>
                </div>
@@ -55,11 +57,40 @@
                      <h2 class="is-size-4 my-4">Sin resultados</h2>
                      <p class="is-size-6">Cambia los filtros o agrega operaciones</p>
                   </div>
-               </div>
+               </div> -->
+
+               <!--Con resultados balance-->
+               <div class="columns  is-justify-content-center is-align-items-center is-flex-direction-row-reverse">
+               <div class="column is-full box">
+                     <div class="is-flex is-justify-content-space-between mb-6">
+                        <h3 class="is-size-3">Operaciones</h3>
+                        <button class="button has-background-primary has-text-white">+ Nueva operación</button>
+                     </div>
+
+                     <div class="is-flex is-flex-direction-column is-justify-content-center ">
+                        <div class="is-flex  is-align-items-center is-justify-content-space-between">
+                           <h4>Descripción</h4>
+                           <h4>Categoría</h4>
+                           <h4>Fecha</h4>
+                           <h4>Monto</h4>
+                           <h4>Acciones</h4>
+                        </div>
+
+                        <div class="is-flex  is-align-items-center is-justify-content-space-between ">
+                           <h4>Festejo</h4>
+                           <h4>Comida</h4>
+                           <h4>23/11/2022</h4>
+                           <h4>+8000</h4>
+                           <div>
+                              <h4>Editar</h4>
+                              <h4>Eliminar</h4>
+                           </div>
+                        </div>
+                     </div>
             </div>
       
 
-         <div class="column is-3  is-flex is-flex-direction-column-reverse py-5">
+         <div class="column is-6  is-flex is-flex-direction-column-reverse py-5">
             <div class="box  is-3 py-5 px-5  has-background-white mb-9 mt-5 mb-4">
                   <div class="is-flex is-align-items-center is-justify-content-space-between mb-5">
                      <h3 class="is-size-3">Filtros</h3>
@@ -125,10 +156,15 @@
 
       </div>
 
-      </section>-->
+      <!--Con resultados balance-->
+      
 
-      <section class="columns my-6 is-justify-content-center is-align-items-center is-flex-direction-column">
-         <!--Nueva operación-->
+      </section>
+
+      <!-- <section class="columns my-6 is-justify-content-center is-align-items-center is-flex-direction-column">
+
+
+         Nueva operación
          <div class="column box is-6 is-flex is-flex-direction-column mb-6">
             <h2 class="is-size-2 mb-5">Nueva operación</h2>
             <h5 class="mb-2 mt-5">Descripción</h5>
@@ -172,7 +208,167 @@
             </div>
          </div>
       
-      </section>
+      </section> -->
 
+
+      <!--Sección categorías-->
+
+      <!-- <section class="columns mt-6 is-justify-content-center">
+         <div class="box column is-6">
+            <h2 class="is-size-2 mb-6">Categorías</h2>
+            <h5 class="pb-3">Nombre</h5>
+            <div class="is-flex">
+                  <input class="input mr-2" type="text">
+                  <button class="button has-background-success has-text-white">Agregar</button>
+            </div>
+            <div class="pt-6">
+               <div class="py-3 is-flex is-justify-content-space-between is-size-7">
+                  <h6 class="has-background-primary-light has-text-primary">Comida</h6>
+                  <div>
+                     <a href="#">Editar</a>
+                     <a href="#" class="pl-4">Eliminar</a>
+                  </div>
+               </div>
+               <div class="py-3 is-flex is-justify-content-space-between is-size-7">
+                  <h6 class="has-background-primary-light has-text-primary">Servicios</h6>
+                  <div>
+                     <a href="#">Editar</a>
+                     <a href="#" class="pl-4">Eliminar</a>
+                  </div>
+               </div>
+               <div class="py-3 is-flex is-justify-content-space-between is-size-7">
+                  <h6 class="has-background-primary-light has-text-primary">Salidas</h6>
+                  <div>
+                     <a href="#">Editar</a>
+                     <a href="#" class="pl-4">Eliminar</a>
+                  </div>
+               </div>
+               <div class="py-3 is-flex is-justify-content-space-between is-size-7">
+                  <h6 class="has-background-primary-light has-text-primary">Educación</h6>
+                  <div>
+                     <a href="#">Editar</a>
+                     <a href="#" class="pl-4">Eliminar</a>
+                  </div>
+               </div>
+               <div class="py-3 is-flex is-justify-content-space-between is-size-7">
+                  <h6 class="has-background-primary-light has-text-primary">Transporte</h6>
+                  <div>
+                     <a href="#">Editar</a>
+                     <a href="#" class="pl-4">Eliminar</a>
+                  </div>
+               </div>
+               <div class="py-3 is-flex is-justify-content-space-between is-size-7">
+                  <h6 class="has-background-primary-light has-text-primary">Trabajo</h6>
+                  <div>
+                     <a href="#">Editar</a>
+                     <a href="#" class="pl-4">Eliminar</a>
+                  </div>
+               </div>
+            </div>
+         </div>
+         
+      </section> -->
+
+
+
+      <!--Sección reportes sin operaciones-->
+      <!-- <section class="columns is-justify-content-center mt-6" >
+         <div class="box column is-6">
+            <h2 class="is-size-2">Reportes</h2>
+            <div class="is-flex is-align-items-center is-flex-direction-column is-justify-content-center py-6">
+               <img class="pb-4" src="./img/reportes.svg" alt="" width="50%">
+               <h3 class="py-3 is-size-3">Operaciones insuficientes</h3>
+               <p>Prueba agregando más operaciones</p>
+            </div>
+         </div>
+      </section> -->
+
+
+      <!--Sección de reportes con operaciones-->
+      <!-- <section class="columns is-justify-content-center is-align-items-center mt-6">
+         <div class="box column is-6 px-6 py-6">
+            <h2 class="is-size-2">Reportes</h2>
+
+            <div>
+               <h3 class="pt-6 pb-5 is-size-4">Resumen</h3>
+
+               <div class="is-flex is-justify-content-space-between is-align-items-center column">
+                  <h5>Categoría con mayor ganancia</h5>
+                  <div class="column is-flex is-justify-content-space-between is-5">
+                     <span>Trabajo</span>
+                     <p>+$500000</p>
+                  </div>
+               </div>
+
+               <div class="is-flex is-justify-content-space-between is-align-items-center column">
+                  <h5>Categoría con mayor gasto</h5>
+                  <div class="column is-flex is-justify-content-space-between is-5">
+                     <span>Comida</span>
+                     <p>-$500000</p>
+                  </div>
+               </div>
+
+               <div class="is-flex is-justify-content-space-between is-align-items-center column">
+                  <h5>Categoría con mayor balance</h5>
+                  <div class="column is-flex is-justify-content-space-between is-5">
+                     <span>Trabajo</span>
+                     <p>-$500000</p>
+                  </div>
+               </div>
+
+               <div class="is-flex is-justify-content-space-between is-align-items-center column">
+                  <h5>Mes con mayor ganancia</h5>
+                  <div class="column is-flex is-justify-content-space-between is-5">
+                     <span>2022/11/23</span>
+                     <p>$500000</p>
+                  </div>
+               </div>
+
+               <div class="is-flex is-justify-content-space-between is-align-items-center column">
+                  <h5>Mes con mayor gasto</h5>
+                  <div class="column is-flex is-justify-content-space-between is-5">
+                     <span>2022/11/23</span>
+                     <p>-500000</p>
+                  </div>
+               </div>
+            </div>
+   
+         <div class="is-flex-direction-column is-flex is-justify-content-space-between">
+            <h3 class="pt-6 pb-5 is-size-4">Total por categorías</h3>
+
+            <div class="is-flex is-justify-content-space-between  is-fullwidth column">
+                  <h6>Categoria</h6>
+                  <h6>Ganancias</h6>
+                  <h6>Gastos</h6>
+                  <h6>Balance</h6>
+            </div>
+
+            <div class="is-flex is-justify-content-space-between is-fullwidth is-align-items-end  column">
+               <h6>Comida</h6>
+               <p>$0</p>
+               <p>-$50</p>
+               <p>$500</p>
+            </div>
+         </div>  
+
+         <div class="is-flex-direction-column is-flex is-justify-content-space-between">
+            <h3 class="pt-6 pb-5 is-size-4">Total por mes</h3>
+
+            <div class="is-flex is-justify-content-space-between column is-align-items-center is-fullwidth">
+                  <h6>Mes</h6>
+                  <h6>Ganancias</h6>
+                  <h6>Gastos</h6>
+                  <h6>Balance</h6>
+            </div>
+
+            <div class="is-flex is-justify-content-space-between is-fullwidth is-align-items-center column is-full">
+               <h6>11/2022</h6>
+               <p>$0</p>
+               <p>-$50</p>
+               <p>$500</p>
+            </div>
+         </div>  
+      </div>
+      </section> -->
 </body>
 </html>
